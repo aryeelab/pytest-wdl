@@ -1,0 +1,11 @@
+{
+  "cache_dir": "/tmp/pytest_cache",
+  "default_executors": ["cromwell"],
+  "executors": {
+     "cromwell": {
+       "java_bin": "/usr/bin/java",
+       "java_args": "-Xmx8g -Ddocker.hash-lookup.enabled=false",
+       "cromwell_jar_file": "/usr/local/cromwell-53.1.jar"
+      }
+  }
+}
